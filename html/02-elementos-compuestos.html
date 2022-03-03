@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos compuestos</title>
+</head>
+
+<body>
+    <form>
+        <!--Value se mandará al back, id es un identificador-->
+        <!--For de label se identifica con id de input-->
+
+        <!--Etiquetas para entrada-->
+        <label for="first input">Ejemplo de entrada básica</label><br>
+        <!--Entradas-->
+        <input type="text" id="first input" name="first input" value=""><br><br>
+
+        <!--Tipos de entrada-->
+        <label for="email-01">Input para correo electrónico</label><br>
+        <input type="email" id="email-01" name="email-01"><br><br>
+
+        <label for="number-01">Input para números</label><br>
+        <input type="number" id="first number" name="number-01"><br><br>
+
+        <label for="password-01">Input para contraseñas</label><br>
+        <input type="password" id="password-01" name="password-01" minlength="8"><br><br>
+
+        <label for="tel-01">Input para teléfono</label><br>
+        <input type="telephone" id="tel-01" name="tel-01" maxlength="10"><br><br>
+
+        <label for="url-01">Input para URL</label><br>
+        <input type="url" id="url-01" name="url-01"><br><br>
+
+        <!--Input tipo checkbox-->
+        <input type="checkbox" id="topping-01" name="topping-01" value="Chocolate">
+        <label for="ttopping-01">Cobertura de chocolate</label><br>
+
+        <input type="checkbox" id="topping-02" name="topping-02" value="Galleta">
+        <label for="topping-02">Trocitos de galleta</label><br>
+
+        <input type="checkbox" id="topping-03" name="topping-03" value="Nuez">
+        <label for="topping-03">Nuez picada</label><br>
+
+        <!--Input de color-->
+        <label for="first-color">Input de color</label>
+        <input type="color" id="first-color" name="first-color"><br><br>
+
+        <!--Input de fechas-->
+        <label for="fecha-01">Input de fecha</label><br>
+        <input type="date" id="fecha-01" name="date-01"><br><br>
+
+        <label for="fecha-02">Input de fecha y hora</label><br>
+        <input type="datetime-local" id="fecha-02" name="fecha-02"><br><br>
+
+        <label for="fecha-03">Input de semana</label><br>
+        <input type="week" id="fecha-03" name="fecha-03"><br><br>
+
+        <label for="fecha-04">Input de hora</label><br>
+        <input type="time" id="fecha-04" name="fecha-04"><br><br>
+
+        <label for="fecha-05">Input de mes</label><br>
+        <input type="month" id="fecha-05" name="fecha-05"><br><br>
+
+        <!--Input para archivos-->
+        <label for="file-01">Input de archivo</label>
+        <input type="file" id="file-01" name="file-01"><br><br>
+        <!--Input para subir múltiples archivos-->
+        <label for="file-02">Subir múltiples archivos</label><br>
+        <input type="file" id="file-02" name="file-02"><br><br>
+
+        <!--Input de radio button-->
+        <!--El nombre lo usaremos como radio group-->
+        <input type="radio" id="java" name="fav-language" value="java">
+        <label for="java">Java</label><br>
+
+        <input type="radio" id="python" name="fav-language">
+        <label for="python">Python</label><br>
+
+        <input type="radio" id="js" name="fav-language">
+        <label for="js"></label>JavaScript<br><br>
+
+        <!--Input de rango-->
+        <label for="vol">Volumen</label>
+        <input type="range" id="vol" name="vol" min="0" max="50"><br><br>
+
+        <!--Limpiar los valores del formulario-->
+        <input type="reset"><br><br>
+        <!--Mandar datos al backend-->
+        <input type="submit"><br><br>
+
+        <!--Botones-->
+        <button type="button" id="boton-01" name="boton-01" value="boton-01" onclick="alert('Bienvenidos, Explorers')">Dale click</button><br>
+    </form>
+</body>
+</html>
